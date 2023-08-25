@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+.mainContainer {
+    border-radius: 8px;
+    width: 327px;
+    background: #1B1937;
+    box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.20);
+    color: white;
+
+    .image {
+        border-radius: 8px 8px 0 0;
+        height: 240px;
+        opacity: 0.7511;
+        object-fit: cover;
+    }
+
+    .content {
+        padding: 40px 32px 32px;
+
+        .title {
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 32px;
+
+            .titleHighlight {
+                color: #AB5CDB;
+            }
+        }
+
+        .subtitle {
+            margin: 16px 0 16px;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            line-height: 25px;
+            opacity: 75%;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .mainContainer {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 1110px;
+        height: 446px;
+        
+        .image {
+            border-radius: 0 8px 8px 0;
+            height: auto;
+        }
+
+        .content {
+            padding: 72px 72px 0;
+
+            .title {
+                font-size: 36px;
+                text-align: left;
+            }
+
+            .subtitle {
+                margin: 25px 0 0 0;
+                width: 350px;
+                text-align: left;
+            }
+
+            .numberedContextContainer {
+                margin-top: 72px;
+                width: 350px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

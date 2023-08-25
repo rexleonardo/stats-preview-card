@@ -1,0 +1,38 @@
+.numberedContextContainer {
+    margin-top: 24px;
+    font-family: 'Inter', sans-serif;
+
+    .numberedText {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .text {
+        margin-top: 2px;
+        text-align: center;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        line-height: 25px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        opacity: 60%;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .numberedContextContainer {
+        margin-top: 0;
+
+        .numberedText {
+            text-align: left;
+        }
+
+        .text {
+            text-align: left;
+        }
+    }
+}
